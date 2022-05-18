@@ -11,7 +11,8 @@
   --logo-white-color: rgba(255, 255, 255, 1);
   --logo-dark-color: rgba(0, 0, 0, 1);
   --dark-motive: rgba(47, 48, 58, 1);
-  --team-bg-color:rgba(245, 244, 250, 1);
+  --team-bg-color: rgba(245, 244, 250, 1);
+  --footer-links-color: rgba(255, 255, 255, 0.6);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -30,10 +31,23 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
 }
-.buttons:focus .links:focus {
+.buttons:focus{
   border: 1px solid rgba(0, 0, 0, 1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   outline: none;
+}
+.foot .destination{
+    text-decoration: none;
+    color: var(--logo-white-color);
+}
+.foot .contact{
+    color: var(--footer-links-color);
+}   
+.links a:hover, .links a:focus{
+    color:var(--main-color);
+    outline: none;
+
+
 }
 .order .buttons {
   background-color: var(--main-color);
@@ -46,31 +60,37 @@ body {
   color: var(--main-txt-color);
 }
 
-.navigation{
-    background-color: var(--logo-white-color);
+.navigation {
+  background-color: var(--logo-white-color);
 }
-.order{
-    background-color: var(--dark-motive);
+.order,
+.foot {
+  background-color: var(--dark-motive);
 }
-.team{
-    background-color: var(--team-bg-color);
-}
-.foot{
-    background-color: var(--dark-motive);
+.team {
+  background-color: var(--team-bg-color);
 }
 
-.logo, .logo:visited{
-    font-family: "Raleway",sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.174;
-    text-decoration: none;
-    color: none;
+
+.logo,
+.logo:visited {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.174;
+  text-decoration: none;
+  color: none;
 }
 
-.logo .first{    color: var(--main-color);}
-.navigation .logo .second{    color: var(--logo-dark-color);}   
-.foot .logo .second{    color: var(--logo-white-color);}   
+.logo .first {
+  color: var(--main-color);
+}
+.navigation .logo .second {
+  color: var(--logo-dark-color);
+}
+.foot .logo .second {
+  color: var(--logo-white-color);
+}
 
 /* .links li:hover{
     color: var(--buttons-hover-color);
