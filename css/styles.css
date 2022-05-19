@@ -138,6 +138,7 @@ body {
 }
 .description dd {
   line-height: var(--line-height-big);
+  color: var(--nav-second-color)
 }
 
 /* aboout us */
@@ -148,11 +149,13 @@ body {
   line-height: var(--line-height-small);
 }
 /* team */
-.team {
+.team figcaption{
   line-height: var(--line-height-small);
+  color: var(--nav-second-color);
 }
 .team strong {
   font-weight: 500;
+  color: var(--main-txt-color);
 }
 /* References-list*/
 .references-list p {
