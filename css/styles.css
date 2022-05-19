@@ -62,7 +62,6 @@ body {
   font-size: 26px;
   line-height: 1.174;
   text-decoration: none;
-  color: none;
 }
 .logo .first {
   color: var(--main-color);
