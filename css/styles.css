@@ -55,8 +55,8 @@ body {
 
 /*                                             links styling                               */
 /* logo */
-.logo,
-.logo:visited {
+.navigation .links .logo,
+.navigation .links .logo:visited {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
